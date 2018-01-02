@@ -1,0 +1,23 @@
+{
+  "name": "node.express.starter",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack-watch-server"
+  },
+  "author": "Dr. Patrick Bartsch",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "@types/express": "^4.11.0",
+    "express": "^4.16.2",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "webpack-watch-server": "^1.2.1"
+  }
+}
