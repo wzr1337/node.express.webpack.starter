@@ -18,6 +18,14 @@ module.exports = {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist')
   },
+  devtool: 'source-map',
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
+      sourceMap: true,
+      include: /\.min\.js$/,
+    })
+  ],
   resolve: {
     // Add `.ts` and `.tsx` as a resolvable extension.
     extensions: ['.ts', '.tsx', '.js']

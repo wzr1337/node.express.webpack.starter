@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
-    "inlineSourceMap": true
+    "declaration": true,
+    "sourceMap": true
   }
 }
