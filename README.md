@@ -29,7 +29,13 @@ For more detailed information, look here : (https://www.typescriptlang.org/)
 In order, to build the software (once per call), use
 
 ```bash
-$ npm run build
+$ npm run build:prod
+```
+
+or
+
+```bash
+$ npm run build:dev
 ```
 
 The webpack packager will do the work for you and you will find `dist/index.js` afterwards.

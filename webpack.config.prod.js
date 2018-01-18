@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var fs = require('fs');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 var nodeModules = {};
 fs.readdirSync('node_modules')
@@ -19,6 +20,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   devtool: 'source-map',
+  plugins: [
+    new UglifyJsPlugin({
+      test: /\.js($|\?)/i
+    })
+  ],
   resolve: {
     // Add `.ts` and `.tsx` as a resolvable extension.
     extensions: ['.ts', '.tsx', '.js']
